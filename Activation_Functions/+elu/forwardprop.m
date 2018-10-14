@@ -1,0 +1,10 @@
+function da = forwardprop(dn,n,a,param)
+%TANSIG.FORWARDPROP
+
+% Dept of ECE, UoA
+
+alpha1 = 1;
+%da=n.*(n > 0) + alpha1*(exp(n) - 1).*(n <= 0);
+da =  bsxfun(@times,dn,1.*(n > 0) + (alpha1+a).*(n <= 0));
+ %da = bsxfun(@times,dn,1-(a.*a));
+end
