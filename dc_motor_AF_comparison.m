@@ -28,14 +28,14 @@ hiddenLayerSize = 10;
 count = 100; %epoch
 goal = 0.0;
 mingrad = 1e-500;
-numNN = 3; %repetition
+numNN = 1; %repetition
 
 H = hiddenLayerSize;
 for i = 1:numNN
 net = narxnet(inputDelays,feedbackDelays,hiddenLayerSize,'open',trainFcn);
 [x,xi,ai,t] = preparets(net,X,{},T);
 netelliot = net;
-netelliot.layers.transferFcn={'elliotsig';'purelin'};
+netelliot.layers.transferFcn={'elliotsigN';'purelin'};
 netelliot.output.processFcns = {};
 netelliot.divideFcn = '';
 netelliot.trainParam.goal = goal;
@@ -52,7 +52,7 @@ netsqnl.trainParam.min_grad = mingrad;
 
 
 nettansig = net;
-nettansig.layers.transferFcn={'tansig';'purelin'};
+nettansig.layers.transferFcn={'tansigN';'purelin'};
 nettansig.output.processFcns = {};
 nettansig.divideFcn = '';
 nettansig.trainParam.goal = goal;
