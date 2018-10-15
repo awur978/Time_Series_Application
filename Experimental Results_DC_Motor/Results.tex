@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{hhline}
+\usepackage[acronym]{glossaries}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ctable}
+\usepackage{float}
+\usepackage{color}
+
+
+\title{Experimental Results}
+\begin{document}
+   \maketitle
+
+\section{Performance Analysis on the Effect of simulation fixed step size on the accuracy, architecture  on neural network replacement of PID in dc motor speed control}
+\subsection{Performance with 10 hidden neurons}
+Training Parameter: Tansig hidden layer, maximum epoch 150, stopping criteria epoch, minimum gradient, only the maximum epoch is changed everything else stays default. Such as input Delays = 1:2;
+feedback Delays = 1:2; hidden Layer Size = 10; 
+With smaller step size, we have more data, and less error. Worst performance is shown in bold
+\begin{table}[H]
+\centering
+\caption{\label{tab1}Effect of Fixed step size on Accuracy Testing - Hidden Neurons 10}
+\begin{tabular}{|l|l|l|}
+\hline
+Fixed Step Size & Training Error & Test Error \\ \hline
+0.001           & 2.4116e-06     & 1.9052e-06 \\ \hline
+0.01            & 2.3287e-06     & 1.8463e-06 \\ \hline
+0.1             & 7.4570e-05     & 6.1457e-05 \\ \hline
+0.2             & \textbf{2.8739e-04}     & \textbf{3.4440e-04} \\ \hline
+\end{tabular}
+\end{table}
+\subsection{Performance with 3 hidden neurons}
+\begin{table}[H]
+\centering
+\caption{\label{tab2}Effect of Fixed step size on Accuracy Testing - Hidden Neurons 3}
+\begin{tabular}{|l|l|l|}
+\hline
+Fixed Step Size & Training Error & Test Error \\ \hline
+0.001           & 2.5779e-06     & 2.0565e-06 \\ \hline
+0.01            & 2.5016e-06     & 1.9960e-06 \\ \hline
+0.1             & 9.5324e-05     & 7.7856e-05 \\ \hline
+0.2             & \textbf{3.6994e-04 }     & \textbf{4.0580e-04} \\ \hline
+\end{tabular}
+\end{table}
+From the experiment we can conclude that a fixed step size of 0.01 will give better performance and the minimum allowed number of neurons in the hidden layer is 3.
+
+
+\end{document}
