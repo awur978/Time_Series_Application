@@ -19,14 +19,14 @@
 \begin{document}
    \maketitle
 
-\section{Performance Analysis on the Effect of simulation fixed step size on the accuracy, architecture  on neural network replacement of PID in dc motor speed control}
+\section{Effect of simulation fixed step size on the accuracy, architecture  on neural network replacement of PID in dc motor speed control \label{step_size}}
 \subsection{Performance with 10 hidden neurons}
 Training Parameter: Tansig hidden layer, maximum epoch 150, stopping criteria epoch, minimum gradient, only the maximum epoch is changed everything else stays default. Such as input Delays = 1:2;
 feedback Delays = 1:2; hidden Layer Size = 10; 
 With smaller step size, we have more data, and less error. Worst performance is shown in bold
 \begin{table}[H]
 \centering
-\caption{\label{tab1}Effect of Fixed step size on Accuracy Testing - Hidden Neurons 10}
+\caption{\label{tab1}Effect of Fixed step size on Accuracy Testing Accuracy - Hidden Neurons 10}
 \begin{tabular}{|l|l|l|}
 \hline
 Fixed Step Size & Training Error & Test Error \\ \hline
@@ -39,7 +39,7 @@ Fixed Step Size & Training Error & Test Error \\ \hline
 \subsection{Performance with 3 hidden neurons}
 \begin{table}[H]
 \centering
-\caption{\label{tab2}Effect of Fixed step size on Accuracy Testing - Hidden Neurons 3}
+\caption{\label{tab2}Effect of Fixed step size on Testing Accuracy - Hidden Neurons 3}
 \begin{tabular}{|l|l|l|}
 \hline
 Fixed Step Size & Training Error & Test Error \\ \hline
@@ -51,5 +51,20 @@ Fixed Step Size & Training Error & Test Error \\ \hline
 \end{table}
 From the experiment we can conclude that a fixed step size of 0.01 will give better performance and the minimum allowed number of neurons in the hidden layer is 3.
 
-
+\section{Effect of Delay on the accuracy of neural network replacement of PID in DC motor speed control}
+Using the fixed step size obtained in \ref{step_size}, and the minimum hidden layer of 3 neurons, the following are the results for varying the delay. All other parameters are kept constant.
+\begin{table}[H]
+\centering
+\caption{\label{tab3}Effect of Delay on  Testing Accuracy}
+\begin{tabular}{|l|l|l|}
+\hline
+Delay & Training Error & Test Error \\ \hline
+2     & 2.5016e-06     & 1.9960e-06 \\ \hline
+3     & 2.5152e-06     & 2.0026e-06 \\ \hline
+6     & 2.4874e-06     & 1.9868e-06 \\ \hline
+9     & 2.4872e-06     & 1.9871e-06 \\ \hline
+12    & 2.4856e-06     & 1.9859e-06 \\ \hline
+\end{tabular}
+\end{table}
+Observation: as the delay increases, the test accuracy gets better even though the difference is really small. However, the higher the value of the network delay, the more "complex" the architecture.
 \end{document}
