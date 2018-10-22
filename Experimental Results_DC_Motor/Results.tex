@@ -74,7 +74,22 @@ Observation: as the delay increases, the test accuracy gets better even though t
 \item How low can we go before the error is unacceptable?
 \item Which AF gives the minimum epoch,error with hidden neuron settings.
 \end{itemize}
-
+\begin{table}[H]
+\centering
+\caption{\label{tab3}Effect of Delay on  Testing Accuracy}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\begin{tabular}[c]{@{}l@{}}Number of\\  Neurons\end{tabular} & \multicolumn{2}{l|}{3}                                        & \multicolumn{2}{l|}{4}                                        & \multicolumn{2}{l|}{10}                                      \\ \hline
+Function                                                     & Epoch  & \begin{tabular}[c]{@{}l@{}}Test\\ Error\end{tabular} & Epoch  & \begin{tabular}[c]{@{}l@{}}Test\\ Error\end{tabular} & Epoch & \begin{tabular}[c]{@{}l@{}}Test\\ Error\end{tabular} \\ \hline
+ElliotSig                                                    & 800    & 2.0010e-04                                           & 800    & 2.0004e-04                                           &       &                                                      \\ \hline
+SQNL                                                         & 761.69 & 1.9967e-04                                           & 776.47 & 1.9951e-04                                           &       &                                                      \\ \hline
+TanSig                                                       & 799.8  & 1.9968e-04                                           & 800    & 1.9921e-04                                           &       &                                                      \\ \hline
+ReLu                                                         & 124.35 & 4.5861e-04                                           & 132.23 & 3.7159e-04                                           &       &                                                      \\ \hline
+SQLU                                                         & 674.57 & 2.0031e-04                                           & 771.14 & 2.0023e-04                                           &       &                                                      \\ \hline
+ELU                                                          & 681.81 & 2.0030e-04                                           & 776.21 & 2.0021e-04                                           &       &                                                      \\ \hline
+Leaky ReLu                                                   & 132.06 & 3.2981e-04                                           & 128.06 & 3.7556e-04                                           &       &                                                      \\ \hline
+\end{tabular}
+\end{table}
 
 
 \section{Write Up}

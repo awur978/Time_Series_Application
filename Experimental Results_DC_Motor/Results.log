@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.8.19)  18 OCT 2018 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.8.19)  23 OCT 2018 12:16
 entering extended mode
 **./Results.tex
 (Results.tex
@@ -657,26 +657,30 @@ Overfull \hbox (5.80959pt too wide) in paragraph at lines 22--22
 [1
 
 {C:/Users/awur978/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2] (Results.aux) ) 
+[2] [3] (Results.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  7865 strings out of 493318
  115782 string characters out of 3129079
- 231214 words of memory out of 3000000
+ 233214 words of memory out of 3000000
  11220 multiletter control sequences out of 15000+200000
  11838 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,9n,53p,1943b,224s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\awur978\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-jknappen\ec\dpi600\tcrm1000.pk><C:/Users/awur978/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/awur978/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/awur978/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Users/awur978/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr12.pfb><C:/Users/awur978/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb>
-Output written on Results.pdf (2 pages, 75779 bytes).
+ 45i,14n,53p,1943b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\awur978\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\tcrm1000.pk><C:/Users/awur978/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbx10.pfb><C:/Users/awur978/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/awur978/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/awur978/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/awur978/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+17.pfb>
+Output written on Results.pdf (3 pages, 77946 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
