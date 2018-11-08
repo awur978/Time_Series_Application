@@ -227,13 +227,13 @@ end
 % meanpefelutrain = mean(perfselutrain)
 % meanpeflrelutrain = mean(perfslrelutrain)
 
-meanpefelliottest = mean(perfselliottest)*100
-meanpefsqnltest = mean(perfssqnltest)*100
-meanpeftansigtest = mean(perfstansigtest)*100
-meanpefrelutest = mean(perfsrelutest)*100
-meanpefsqlutest = mean(perfssqlutest)*100
-meanpefelutest = mean(perfselutest)*100
-meanpeflrelutest = mean(perfslrelutest)*100
+meanpefelliottest = mean(perfselliottest)
+meanpefsqnltest = mean(perfssqnltest)
+meanpeftansigtest = mean(perfstansigtest)
+meanpefrelutest = mean(perfsrelutest)
+meanpefsqlutest = mean(perfssqlutest)
+meanpefelutest = mean(perfselutest)
+meanpeflrelutest = mean(perfslrelutest)
 
 mean(epochelliot1)
 mean(epochsqnl1)
