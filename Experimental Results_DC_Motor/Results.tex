@@ -74,9 +74,9 @@ Observation: as the delay increases, the test accuracy gets better even though t
 \item How low can we go before the error is unacceptable?
 \item Which AF gives the minimum epoch,error with hidden neuron settings.
 \end{itemize}
-\begin{table}[H]
+\begin{table}
 \centering
-\caption{\label{tab3}Effect of Delay on  Testing Accuracy}
+\caption{\label{tab3}Effect of Activation Function on  Testing Accuracy}
 \begin{tabular}{|l|l|l|l|l|l|l|}
 \hline
 \begin{tabular}[c]{@{}l@{}}Number of\\  Neurons\end{tabular} & \multicolumn{2}{l|}{3}                                        & \multicolumn{2}{l|}{4}                                        & \multicolumn{2}{l|}{10}                                      \\ \hline
@@ -94,4 +94,15 @@ Leaky ReLu                                                   & 132.06 & 3.2981e-
 
 \section{Write Up}
 The use of PID as a controller in control system applications is ubiquitous. Although the theory behind PID is really simple but the design and implementation of PID controllers are known to be time consuming and difficult. Moreover, PID are linear systems and can only learn a particular plant based on their predefined settings. NN on the other hand are characterised with learning opportunities and adaptability in nature. This means that a NN based controller is robust to several input types and even maybe different plant architectures as will be proved in this work.
+
+\section{Neural Network Replacement of PID}
+We further demonstrated the ability of the proposed SQNL on control application. The use of PID for controlling control systems is a wide area of study however, in recent years, the disadvantages of PID controller have being solved by Neural Network Controllers. We therefore replaced the PID controller with 3 hidden neuron Neural Network architecture using the illustration in 
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.65]{PID_NN.jpg}
+\caption{\label{fig:compare_rbf} The Experimental setup of the NN replacement of PID controller}
+\end{figure}
+
 \end{document}

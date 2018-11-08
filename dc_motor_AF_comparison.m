@@ -27,9 +27,9 @@ Ttest = tonndata(pidout_test,false,false);
 % Create a Nonlinear Autoregressive Network with External Input
 inputDelays = 1:2;
 feedbackDelays = 1:2;
-hiddenLayerSize = 3;
-count = 800; %epoch
-goal = 0.00001;
+hiddenLayerSize = 6;
+count = 500; %epoch
+goal = 2.52e-6;%0.000001;
 mingrad = 1e-500;
 numNN = 100; %repetition
 

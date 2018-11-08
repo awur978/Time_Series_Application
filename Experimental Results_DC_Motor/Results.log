@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.8.19)  23 OCT 2018 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.8.19)  5 NOV 2018 11:54
 entering extended mode
 **./Results.tex
 (Results.tex
@@ -538,7 +538,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box35
 \@float@everytoks=\toks35
 \@floatcapt=\box36
-) (Results.aux)
+) (Results.aux
+
+LaTeX Warning: Label `tab3' multiply defined.
+
+)
 \openout1 = `Results.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -555,8 +559,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
-
-("C:\Users\awur978\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Users\awur978\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 19.
@@ -657,19 +660,27 @@ Overfull \hbox (5.80959pt too wide) in paragraph at lines 22--22
 [1
 
 {C:/Users/awur978/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2] [3] (Results.aux)
+[2]
+<PID_NN.jpg, id=14, 526.21594pt x 252.19218pt>
+File: PID_NN.jpg Graphic file (type jpg)
+<use PID_NN.jpg>
+Package pdftex.def Info: PID_NN.jpg  used on input line 104. on input line 104.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package pdftex.def Info: Requested size: 342.03632pt x 163.92297pt on input lin
+e 104.
+ [3 <./PID_NN.jpg>] (Results.aux)
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7865 strings out of 493318
- 115782 string characters out of 3129079
- 233214 words of memory out of 3000000
- 11220 multiletter control sequences out of 15000+200000
+ 7874 strings out of 493318
+ 115893 string characters out of 3129079
+ 234261 words of memory out of 3000000
+ 11227 multiletter control sequences out of 15000+200000
  11838 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,14n,53p,1943b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,14n,53p,1943b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\awur978\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\tcrm1000.pk><C:/Users/awur978/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmbx10.pfb><C:/Users/awur978/AppData/Local/Programs/MiKTeX 2.
@@ -678,9 +689,9 @@ grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/awur978/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
 rs/awur978/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 17.pfb>
-Output written on Results.pdf (3 pages, 77946 bytes).
+Output written on Results.pdf (3 pages, 101639 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
