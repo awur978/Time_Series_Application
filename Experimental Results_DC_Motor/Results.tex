@@ -95,14 +95,22 @@ Leaky ReLu                                                   & 132.06 & 3.2981e-
 \section{Write Up}
 The use of PID as a controller in control system applications is ubiquitous. Although the theory behind PID is really simple but the design and implementation of PID controllers are known to be time consuming and difficult. Moreover, PID are linear systems and can only learn a particular plant based on their predefined settings. NN on the other hand are characterised with learning opportunities and adaptability in nature. This means that a NN based controller is robust to several input types and even maybe different plant architectures as will be proved in this work.
 
-\section{Neural Network Replacement of PID}
-We further demonstrated the ability of the proposed SQNL on control application. The use of PID for controlling control systems is a wide area of study however, in recent years, the disadvantages of PID controller have being solved by Neural Network Controllers. We therefore replaced the PID controller with 3 hidden neuron Neural Network architecture using the illustration in 
+\section{Neural Network Controller}
+We implemented a time series neural network controller for controlling the speed of a DC-motor. The following are the parameters of the DC motor ... The speed control of the motor was initially controlled using the popular PID controller and this controller is replaced by the NN controller. The best performance accuracy for the motor was obtained by training the NN with the following parameters input and feedback delays of 2 and hidden neuron size of 3. The block diagram of the experiment set-up of PID contoller replacement with Neural Network is illustrated in Fig. \ref{fig:pidNN}. Fig. \ref{fig:res_pidNN} shows the responses of a Matlab and the modelsim simulation. The ANNs use 8bit AFs, and the inferred speed in Matlab and VHDL are closely matched.
+%We further demonstrated the ability of the proposed SQNL on control application. The use of PID for controlling control systems is a wide area of study however, in recent years, the disadvantages of PID controller have being solved by Neural Network Controllers. We therefore replaced the PID controller with 3 hidden neuron Neural Network architecture using the illustration in 
 
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.65]{PID_NN.jpg}
-\caption{\label{fig:compare_rbf} The Experimental setup of the NN replacement of PID controller}
+\caption{\label{fig:pidNN} The Experimental setup of the NN replacement of PID controller}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.65]{NNpid.eps}
+\caption{\label{fig:res_pidNN} The Experimental setup of the NN replacement of PID controller}
 \end{figure}
 
 \end{document}
