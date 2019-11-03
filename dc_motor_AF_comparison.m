@@ -53,7 +53,6 @@ netsqnl.trainParam.goal = goal;
 netsqnl.trainParam.epochs = count;
 netsqnl.trainParam.min_grad = mingrad;
 
-
 nettansig = net;
 nettansig.layers.transferFcn={'tansig';'purelin'};
 nettansig.output.processFcns = {};
@@ -61,7 +60,6 @@ nettansig.divideFcn = '';
 nettansig.trainParam.goal = goal;
 nettansig.trainParam.epochs = count;
 nettansig.trainParam.min_grad = mingrad;
-
 
 netrelu = net;
 netrelu.layers.transferFcn={'relu';'purelin'};
