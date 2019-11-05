@@ -39,8 +39,6 @@ t_test = mapminmax(t_test_unscale)*120.72;
 
 % x = (pidin_train*50.72)';
 % t = (pidout_train)';
-% 
-% 
 % x_test = (pidin_test*50.72)';
 % t_test = (pidout_test)';
 
@@ -73,7 +71,6 @@ net.divideFcn = '';
 %load('sqnl8_dc_motorNet_v4.mat') %3 hidden neurons, mapminmax then
 %,ultiply by 100.72, PM = 6 'sqnl8';'purelin' best result
  
-
 % Test the Network with seen data
 y = net(x);
 e = gsubtract(t,y);
