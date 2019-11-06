@@ -33,7 +33,6 @@ t_test = mapminmax(t_test_unscale)*120.72;
 % x =  mapminmax_forward_x(x_unscale,xmin,xmax); %x_unscale;%
 % t = mapminmax_forward_y(t_unscale,ymin,ymax);
 % %t = t_unscale;
-% 
 % x_test = mapminmax_forward_x(x_test_unscale,xmin,xmax); % x_test_unscale;%
 % t_test = mapminmax_forward_y(t_test_unscale,ymin,ymax); %t_test_unscale;%
 
@@ -41,7 +40,6 @@ t_test = mapminmax(t_test_unscale)*120.72;
 % t = (pidout_train)';
 % x_test = (pidin_test*50.72)';
 % t_test = (pidout_test)';
-
 
 trainFcn = 'trainlm';  % Levenberg-Marquardt backpropagation.
 
