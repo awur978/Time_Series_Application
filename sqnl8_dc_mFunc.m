@@ -109,6 +109,7 @@ idx = find(n < 0);
 a(idx) = n(idx) + n(idx).^2/256;
 end
 
+
 % Map Minimum and Maximum Output Reverse-Processing Function
 function x = mapminmax_reverse(y,settings)
   x = bsxfun(@minus,y,settings.ymin);
