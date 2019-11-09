@@ -1,4 +1,3 @@
-RandStream.setGlobalStream (RandStream ('mrg32k3a','Seed', 1234)); %remove, just for testing initial weights
 % load('pid_output.mat')
 % load('PID_input.mat')
 
@@ -102,7 +101,6 @@ performance = perform(net,t,y)
 figure; plot(pidout_train); hold on; plot((a));
 legend('Actual','Predicted')
 title('Actual Vs Predicted Output for Training/Seen Data (Un-normalized)')
-
 
 %Testing: Unseen data
 % pidin_test_norm =mapminmax('apply',pidin_test,ps);
