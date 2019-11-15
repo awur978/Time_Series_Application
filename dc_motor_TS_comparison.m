@@ -7,7 +7,6 @@ load('data_ts_01.mat')
 pidin = data_ts_01(:,1);
 pidout = data_ts_01(:,2);
 
-
 %Normalization of inputs and targets
 xmin= min(pidin);
 xmax= max(pidin);
@@ -90,9 +89,3 @@ stopcrit   =  stopcrit    %Min grad reached (for all).
 bestepoch  =  bestepoch
 R2         =  R2
 R2a        =  R2a
-
-
-
-
-
-
