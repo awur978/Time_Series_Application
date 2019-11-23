@@ -118,8 +118,6 @@ ynew = mapminmax_reverse(cell2mat(ytest),ymin,ymax);
 figure; plot(ynew); hold on; plot(pidout_test);
 legend('Actual','Predicted')
 title('Actual Vs Predicted Output for Test/UnSeen Data (Un-normalized)')
-% View the Network
-%view(net)
 
 % Plots
 % Uncomment these lines to enable various plots.
@@ -163,7 +161,6 @@ stepAheadPerformance = perform(nets,ts,ys)
 % title('Actual Vs Predicted Output')
 % figure;plot(cell2mat(e));
 % title('Error')
-
 
 
 %% Test on new data
