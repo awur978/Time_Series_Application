@@ -51,7 +51,6 @@ net.trainParam.min_grad = mingrad;
 net.divideFcn = '';
 net.trainParam.epochs = 1000;
 
-
 % Train the Network
 [net,tr] = train(net,x,t,xi,ai);
 % load('sqnl8_dc_motorNet.mat') %3 Hidden neurons
