@@ -163,7 +163,6 @@ PM = 6;
  
 F=fimath('SumMode', 'SpecifyPrecision','ProductMode', 'SpecifyPrecision','OverflowAction','Saturate','ProductWordLength',RM,'SumWordLength',RM,'ProductFractionLength',PM,'SumFractionLength',PM);
  
- 
 x = fi(x,1,RM,PM,F);
 w1 = fi(w1,1,RM,PM,F);
 b1 = fi(b1,1,RM,PM,F);
