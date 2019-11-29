@@ -121,7 +121,6 @@ perfs = zeros(1, numNN);
 %     a = mapminmax('reverse',y,tsn);
 %     e = gsubtract(t,y);
 
-
     perfselliottrain(i) = perform(netelliot, t, y1elliot);
     perfssqnltrain(i) = perform(netsqnl, t, y1sqnl);
     perfstansigtrain(i) = perform(nettansig, t, y1tansig);
