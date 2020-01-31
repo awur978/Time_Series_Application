@@ -22,6 +22,7 @@ Xtest = tonndata(pidin_test,false,false);
 Ttest = tonndata(pidout_test,false,false);
 
 % Choose a Training Function
+
  trainFcn = 'trainlm';  % Levenberg-Marquardt backpropagation.
 
 % Create a Nonlinear Autoregressive Network with External Input
