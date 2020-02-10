@@ -64,6 +64,7 @@ delay = 2;
 % inputDelays = 1:4;
 % feedbackDelays = 1:4;
 % hiddenLayerSize = 20;
+
 inputDelays = 1:delay;
 feedbackDelays = 1:delay;
 hiddenLayerSize = 3;
@@ -71,6 +72,7 @@ net = narxnet(inputDelays,feedbackDelays,hiddenLayerSize,'open',trainFcn);
 net.initFcn='initlay';  %remove, just for testing initial weights
 net.layers.transferFcn={'tansig';'purelin'};
 net.trainParam.min_grad = mingrad;
+
 % Prepare the Data for Training and Simulation
 % The function PREPARETS prepares timeseries data for a particular network,
 % shifting time by the minimum amount to fill input states and layer
