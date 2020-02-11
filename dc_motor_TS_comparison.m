@@ -1,6 +1,7 @@
 %% This script is to empirically determine the effect of simulation fixed step size on the accuracy, architecture
 % on neural network replacement of PID in dc motor speed control
 
+
 %% Start the initial weight from the same seed for comparison sake 
 RandStream.setGlobalStream (RandStream ('mrg32k3a','Seed', 1234)); %remove, just for testing initial weights
 load('data_ts_01.mat')
