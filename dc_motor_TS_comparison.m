@@ -86,6 +86,7 @@ for h = Hmin:dH:Hmax
     end
 end
    
+   
 stopcrit   =  stopcrit    %Min grad reached (for all).
 bestepoch  =  bestepoch
 R2         =  R2
