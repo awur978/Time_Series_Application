@@ -39,9 +39,7 @@ y1_step1.ymin = -1;
 y1_step1.gain = 0.0634577525318539;
 y1_step1.xoffset = 28.4829682709601;
 
-
 % ===== SIMULATION ========
-
 
 % Dimensions
 TS = size(x1,2); % timesteps
