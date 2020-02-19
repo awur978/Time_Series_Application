@@ -16,6 +16,7 @@ pidout_train = pidout(1:twothird,:);
 pidin_test = pidin(twothird+1:end,:);
 pidout_test = pidout(twothird+1:end,:);
 
+
 pidin_norm =  mapminmax_forward_x(pidin_train,xmin,xmax);
 pidout_norm = mapminmax_forward_y(pidout_train,ymin,ymax);
 % pidin_norm =  pidin_train;
